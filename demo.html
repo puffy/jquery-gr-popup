@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Grayscale popup demo</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/gr_popup.css" media="all">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/gr_popup.js"></script>
+	<script type="text/javascript">
+	 $(function(){
+	   $('div.popup_section a').click(function(){
+       $(this).parent().find('.content_wrapper').togglePopup();
+	   });
+	 });
+	</script>
+</head>
+<body>
+  <!-- necessary div blocks for preview popup -->
+  <div id="opaco" class="hidden"></div>
+  <div id="popup" class="hidden"></div>
+  
+	<h1>Demo of Grayscale popup jQuery plugin</h1>
+	
+	<div class="popup_section">
+  	<a href="#">Show the text in popup</a>
+  	<div class="content_wrapper hidden">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra ante sed lectus lacinia condimentum. Aliquam iaculis dui et sapien hendrerit faucibus. Curabitur lacus magna, ultricies non mattis at, tempus quis felis. Integer accumsan pellentesque felis quis ornare. Integer vel leo id ante venenatis faucibus. Donec dignissim risus in augue hendrerit volutpat. Cras pretium aliquet magna, et vulputate augue feugiat vitae. Sed porttitor facilisis aliquam. Suspendisse turpis mauris, convallis in molestie non, commodo eget ipsum. Quisque mollis condimentum justo, vel vehicula lectus adipiscing eu. Donec sit amet dui sit amet lorem sagittis posuere. Vestibulum vel dolor sapien. Phasellus malesuada feugiat felis. Nullam non imperdiet velit. Cras sagittis, massa ac mattis fermentum, sapien nibh tempor nisi, in posuere eros nisl sed massa. Vivamus laoreet tempus elit, quis tempus erat fermentum a. Nullam faucibus tempus nunc, vel sodales sem adipiscing dictum. Vivamus sem arcu, ultricies sit amet lacinia eu, egestas at ipsum. Donec non magna arcu. Proin mollis elit euismod ligula egestas a sodales metus ullamcorper.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
